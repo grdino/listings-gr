@@ -2,8 +2,8 @@ export async function getServerSideProps() {
   return {
     redirect: {
       destination: "/listings",
-      permanent: false,
-    },
+      permanent: false
+    }
   };
 }
 
