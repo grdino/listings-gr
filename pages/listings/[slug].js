@@ -297,6 +297,9 @@ export default function ListingPage({ listing }) {
             border-radius: 14px;
             background: #d0e4f7;
           }
+          .fact {
+            text-align: center;
+          }
           .heroMedia img {
             width: 100%;
             height: 100%;
