@@ -93,9 +93,9 @@ export default function ListingPage({ listing }) {
               <p className="mlsNote">
        {/*         Listed on the MLS.{" "} */}
                 <a href={listing.mlsLink} target="_blank" rel="noreferrer">
-                  MLS listing
+                  View MLS Listing
                 </a>
-                .
+      {/*        .  */}
               </p>
             )}
           </div>
