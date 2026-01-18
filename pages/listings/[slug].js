@@ -117,34 +117,54 @@ export default function ListingPage({ listing }) {
         </section>
 
         {/* DETAILS + CONTACT */}
-        <div>
-          <div className="whyCard">
-            <div className="whyHeader">
-              <h2 className="whyTitle">Why this condo</h2>
-              <div className="whyPill">Top reasons</div>
+        <section className="section twoCol">
+          {/* LEFT: WHY THIS CONDO + LOCATION */}
+          <div>
+            {/* WHY THIS CONDO */}
+            <div className="whyCard">
+              <div className="whyHeader">
+                <h2 className="whyTitle">Why this condo</h2>
+                <div className="whyPill">Top reasons</div>
+              </div>
+
+              <ul className="bullets whyBullets">
+                {listing.highlights.map((h) => (
+                  <li key={h}>{h}</li>
+                ))}
+              </ul>
             </div>
 
-            <ul className="bullets whyBullets">
-              {listing.highlights.map((h) => (
-                <li key={h}>{h}</li>
-              ))}
-            </ul>
+            {/* LOCATION */}
+            <h2 style={{ marginTop: 28 }}>Location</h2>
+            <p className="text">{listing.locationBlurb}</p>
           </div>
 
-          <h2 style={{ marginTop: 28 }}>Location</h2>
-          <p className="text">{listing.locationBlurb}</p>
-        </div>
-
+          {/* RIGHT: CONTACT CARD */}
           <div className="card">
-            <h3>Rapid Response</h3>
+            <h3>Quick Response</h3>
+            <p className="muted">
+              Get details, pricing, HOA info, or schedule a showing.
+            </p>
 
             <div className="altCtas">
-              <a className="btn primary" href={contactPageLink} target="_blank" rel="noreferrer">
+              <a
+                className="btn primary"
+                href={contactPageLink}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Information about this property
               </a>
-              <a className="btn primary" href={whatsappLink} target="_blank" rel="noreferrer">
+
+              <a
+                className="btn primary"
+                href={whatsappLink}
+                target="_blank"
+                rel="noreferrer"
+              >
                 Message on WhatsApp
               </a>
+
               <a className="btn primary" href={mailtoLink}>
                 Email instead
               </a>
@@ -380,6 +400,75 @@ export default function ListingPage({ listing }) {
 
             .grid {
               grid-template-columns: 1fr;
+            }
+            .whyCard {
+              border: 1px solid #dbeafe;
+              background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
+              border-radius: 18px;
+              padding: 16px 16px 12px;
+              box-shadow: 0 14px 30px rgba(37, 99, 235, 0.08);
+            }
+
+            .whyHeader {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 12px;
+              margin-bottom: 10px;
+            }
+
+            .whyTitle {
+              margin: 0;
+              font-size: 22px;
+              letter-spacing: -0.01em;
+            }
+
+            .whyPill {
+              font-size: 12px;
+              font-weight: 700;
+              padding: 6px 10px;
+              border-radius: 999px;
+              background: #2563eb;
+              color: white;
+              white-space: nowrap;
+            }
+
+            .whyBullets {
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              display: grid;
+              gap: 10px;
+            }
+
+            .whyBullets li {
+              position: relative;
+              padding: 10px 12px 10px 34px;
+              border-radius: 14px;
+              background: rgba(255, 255, 255, 0.7);
+              border: 1px solid #e2e8f0;
+            }
+
+            .whyBullets li::before {
+              content: "✓";
+              position: absolute;
+              left: 12px;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 22px;
+              height: 22px;
+              border-radius: 999px;
+              display: grid;
+              place-items: center;
+              background: #dcfce7;
+              border: 1px solid #86efac;
+              font-weight: 900;
+            }
+
+            @media (max-width: 900px) {
+              .whyTitle {
+                font-size: 20px;
+              }
             }
           }
         `}</style>
