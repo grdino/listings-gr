@@ -78,7 +78,7 @@ export default function ListingPage({ listing }) {
               </div>
             </div>
 
-            <div className="s">
+            <div className="facts">
               {listing.facts.map((f) => (
                 <div key={f.label} className="fact">
                   <div className="factLabel">{f.label}</div>
@@ -295,6 +295,7 @@ export default function ListingPage({ listing }) {
             border: 1px solid #e2e8f0;
             padding: 10px 12px;
             border-radius: 14px;
+            background: #d0e4f7;
           }
           .heroMedia img {
             width: 100%;
