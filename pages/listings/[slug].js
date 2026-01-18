@@ -139,16 +139,16 @@ export default function ListingPage({ listing }) {
               </ul>
             </div>
 
-            {/* LOCATION */}
-            <h2 style={{ marginTop: 28 }}>Location - Location - Location</h2>
-            <p className="text">{listing.locationBlurb}</p>
+         //   {/* LOCATION */}
+         //   <h2 style={{ marginTop: 28 }}>Location - Location - Location</h2>
+         //   <p className="text">{listing.locationBlurb}</p>
           </div>
 
           {/* RIGHT: CONTACT CARD */}
           <div className="card">
-            <h3>Quick Response</h3>
+            <h3>Rapid Response</h3>
             <p className="muted">
-              Get details, pricing, HOA info, or schedule a showing.
+         //     Get details, pricing, HOA info, or schedule a showing.
             </p>
 
             <div className="altCtas">
