@@ -117,21 +117,26 @@ export default function ListingPage({ listing }) {
         </section>
 
         {/* DETAILS + CONTACT */}
-        <section className="section twoCol">
-          <div>
-            <h2>Why this condo</h2>
-            <ul className="bullets">
+        <div>
+          <div className="whyCard">
+            <div className="whyHeader">
+              <h2 className="whyTitle">Why this condo</h2>
+              <div className="whyPill">Top reasons</div>
+            </div>
+
+            <ul className="bullets whyBullets">
               {listing.highlights.map((h) => (
                 <li key={h}>{h}</li>
               ))}
             </ul>
-
-            <h2 style={{ marginTop: 28 }}>Location</h2>
-            <p className="text">{listing.locationBlurb}</p>
           </div>
 
+          <h2 style={{ marginTop: 28 }}>Location</h2>
+          <p className="text">{listing.locationBlurb}</p>
+        </div>
+
           <div className="card">
-            <h3>Quick Response</h3>
+            <h3>Rapid Response</h3>
 
             <div className="altCtas">
               <a className="btn primary" href={contactPageLink} target="_blank" rel="noreferrer">
