@@ -116,10 +116,10 @@ export default function ListingPage({ listing }) {
         <section className="section">
           <h2>Photo Gallery</h2>
           <div className="grid">
-            {listing.photos.map((p) => (
+            {(listing.photos || []).slice(1).map((p) => (
               <div key={p.src} className="gridItem">
-                <img src={p.src} alt={p.alt} />
-              </div>
+               <img src={p.src} alt={p.alt} />
+              div>
             ))}
           </div>
         </section>
