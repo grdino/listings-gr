@@ -139,10 +139,9 @@ export default function ListingPage({ listing }) {
           </div>
 
           <div className="card">
-            <h3>Request details</h3>
+            <h3>Quick Response</h3>
             <p className="muted">
-              Quick response via WhatsApp, email, or my contact page.
-              Please include your timeline and budget range.
+
             </p>
 
             <div className="altCtas">
