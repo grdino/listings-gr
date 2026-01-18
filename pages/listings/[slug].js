@@ -117,7 +117,7 @@ export default function ListingPage({ listing }) {
         </section>
 
         {/* DETAILS + CONTACT */}
-        <section className="section twoCol">
+         <section className="section twoCol">
           {/* LEFT: WHY THIS CONDO + LOCATION */}
           <div>
             {/* WHY THIS CONDO */}
@@ -142,9 +142,7 @@ export default function ListingPage({ listing }) {
           {/* RIGHT: CONTACT CARD */}
           <div className="card">
             <h3>Quick Response</h3>
-            <p className="muted">
-              Get details, pricing, HOA info, or schedule a showing.
-            </p>
+            <p className="muted">Get details, pricing, HOA info, or schedule a showing.</p>
 
             <div className="altCtas">
               <a
