@@ -66,11 +66,11 @@ export default function ListingPage({ listing }) {
                 >
                   WhatsApp
                 </a>
-                <a className="btn" href={mailtoLink}>
+                <a className="btn primary" href={mailtoLink}>
                   Email
                 </a>
                 <a
-                  className="btn"
+                  className="btn primary"
                   href={`tel:${phoneNumber.replace(/[^\d+]/g, "")}`}
                 >
                   Call
