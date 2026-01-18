@@ -295,7 +295,7 @@ export default function ListingPage({ listing }) {
             border: 1px solid #e2e8f0;
             padding: 10px 12px;
             border-radius: 14px;
-            background: #d0e4f7;
+            background: #f0f5fa;
           }
           .fact {
             text-align: center;
