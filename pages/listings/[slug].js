@@ -153,7 +153,7 @@ export default function ListingPage({ listing }) {
 
             <div className="altCtas rapidCtas">
               <a
-                className="btn primary rapidBtn"
+                className="btn primary"
                 href={contactPageLink}
                 target="_blank"
                 rel="noreferrer"
