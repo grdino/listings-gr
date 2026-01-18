@@ -67,7 +67,7 @@ export default function ListingPage({ listing }) {
                 >
                   WhatsApp
                 </a>
-                <a className="btn primary" href={mailtoLink}>
+                <a className="btn primary" href={contactPageLink}>
                   Email
                 </a>
                 <a
