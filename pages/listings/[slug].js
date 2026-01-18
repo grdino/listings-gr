@@ -146,7 +146,7 @@ export default function ListingPage({ listing }) {
 
             <div className="altCtas">
               <a
-                className="btn primary full"
+                className="btn primary"
                 href={contactPageLink}
                 target="_blank"
                 rel="noreferrer"
@@ -155,7 +155,7 @@ export default function ListingPage({ listing }) {
               </a>
 
               <a
-                className="btn primary full"
+                className="btn primary"
                 href={whatsappLink}
                 target="_blank"
                 rel="noreferrer"
@@ -163,7 +163,7 @@ export default function ListingPage({ listing }) {
                 Message on WhatsApp
               </a>
 
-              <a className="btn primary full" href={mailtoLink}>
+              <a className="btn primary" href={mailtoLink}>
                 Email instead
               </a>
             </div>
