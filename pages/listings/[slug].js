@@ -152,11 +152,11 @@ export default function ListingPage({ listing }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                Contact about this property
+                Information about this property
               </a>
 
               <a
-                className="btn full"
+                className="btn primary full"
                 href={whatsappLink}
                 target="_blank"
                 rel="noreferrer"
@@ -164,7 +164,7 @@ export default function ListingPage({ listing }) {
                 Message on WhatsApp
               </a>
 
-              <a className="btn full" href={mailtoLink}>
+              <a className="btn primary full" href={mailtoLink}>
                 Email instead
               </a>
             </div>
