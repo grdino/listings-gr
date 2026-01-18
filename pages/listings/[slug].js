@@ -140,7 +140,7 @@ export default function ListingPage({ listing }) {
             </div>
 
             {/* LOCATION */}
-            <h2 style={{ marginTop: 28 }}>Location</h2>
+            <h2 style={{ marginTop: 28 }}>Location - Location - Location</h2>
             <p className="text">{listing.locationBlurb}</p>
           </div>
 
