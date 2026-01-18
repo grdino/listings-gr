@@ -162,7 +162,7 @@ export default function ListingPage({ listing }) {
               </a>
 
               <a
-                className="btn primary rapidBtn"
+                className="btn primary"
                 href={whatsappLink}
                 target="_blank"
                 rel="noreferrer"
@@ -170,7 +170,7 @@ export default function ListingPage({ listing }) {
                 Message on WhatsApp
               </a>
 
-              <a className="btn primary rapidBtn" href={mailtoLink}>
+              <a className="btn primary" href={mailtoLink}>
                 Email instead
               </a>
             </div>
