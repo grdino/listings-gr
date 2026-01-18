@@ -212,7 +212,7 @@ export default function ListingPage({ listing }) {
               >
                 WhatsApp
               </a>
-              <a className="btn" href={mailtoLink}>
+              <a className="btn" href={contactPageLink}>
                 Email
               </a>
               <a
