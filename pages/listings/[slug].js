@@ -91,9 +91,9 @@ export default function ListingPage({ listing }) {
 
             {listing.mlsLink && (
               <p className="mlsNote">
-                Listed on the MLS.{" "}
+       {/*         Listed on the MLS.{" "} */}
                 <a href={listing.mlsLink} target="_blank" rel="noreferrer">
-                  View official MLS listing
+                  MLS listing
                 </a>
                 .
               </p>
