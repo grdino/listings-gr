@@ -15,6 +15,7 @@ export default function ListingPage({ listing }) {
   const whatsappNumberE164 = "523221812109";
   const contactEmail = "gerry@ronmorgan.net";
   const phoneNumber = "+52 (322) 181-2109";
+  const googleFormLink = "https://docs.google.com/forms/d/e/1FAIpQLSd1KPuW_3fc5cxJTt6tjSVDi-pVOUckEzkZERSTfkd85DHkSw/viewform?usp=sf_link";
 
   const whatsappLink = `https://wa.me/${whatsappNumberE164}?text=${encodeURIComponent(
     `Hi! I'm interested in ${listing.title} in ${listing.addressOrArea}. Can you share details and availability?`
@@ -170,8 +171,13 @@ export default function ListingPage({ listing }) {
                 Message on WhatsApp
               </a>
 
-              <a className="btn primary" href={mailtoLink}>
-                Email instead
+              <a
+                className="btn primary"
+                href={googleFormLink}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Not for you? Find your fit.
               </a>
             </div>
           </div>
