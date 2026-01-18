@@ -385,8 +385,8 @@ export default function ListingPage({ listing }) {
           .rapidHeader {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 10px;
+            justify-content: space-between; /* left title, right pill */
+            gap: 12px;
             margin-bottom: 14px;
           }
 
