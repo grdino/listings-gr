@@ -145,15 +145,15 @@ export default function ListingPage({ listing }) {
           </div>
 
           {/* RIGHT: CONTACT CARD */}
-          <div className="card">
-            <h3>Rapid Response</h3>
-            <p className="muted">
-         {/*     Get details, pricing, HOA info, or schedule a showing. */}
-            </p>
+          <div className="card whyCard rapidCard">
+            <div className="rapidHeader">
+              <h3 className="rapidTitle">Rapid Response</h3>
+              <div className="rapidPill">Just ask</div>
+            </div>
 
-            <div className="altCtas">
+            <div className="altCtas rapidCtas">
               <a
-                className="btn primary"
+                className="btn primary rapidBtn"
                 href={contactPageLink}
                 target="_blank"
                 rel="noreferrer"
@@ -162,7 +162,7 @@ export default function ListingPage({ listing }) {
               </a>
 
               <a
-                className="btn primary"
+                className="btn primary rapidBtn"
                 href={whatsappLink}
                 target="_blank"
                 rel="noreferrer"
@@ -170,7 +170,7 @@ export default function ListingPage({ listing }) {
                 Message on WhatsApp
               </a>
 
-              <a className="btn primary" href={mailtoLink}>
+              <a className="btn primary rapidBtn" href={mailtoLink}>
                 Email instead
               </a>
             </div>
@@ -375,6 +375,48 @@ export default function ListingPage({ listing }) {
             border-radius: 18px;
             padding: 16px 16px 12px;
             box-shadow: 0 14px 30px rgba(37, 99, 235, 0.08);
+          }
+
+          /* RAPID RESPONSE CARD */
+          .rapidCard {
+            text-align: center;
+          }
+
+          .rapidHeader {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 14px;
+          }
+
+          .rapidTitle {
+            margin: 0;
+            font-size: 20px;
+            letter-spacing: -0.01em;
+          }
+
+          .rapidPill {
+            font-size: 12px;
+            font-weight: 700;
+            padding: 6px 10px;
+            border-radius: 999px;
+            background: #2563eb;
+            color: white;
+            white-space: nowrap;
+          }
+
+          .rapidCtas {
+            display: grid;
+            gap: 10px;
+          }
+
+          .rapidBtn {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+            display: inline-flex;
+            align-items: center;
           }
 
           .whyHeader {
